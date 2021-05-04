@@ -1,0 +1,21 @@
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+_parcelHelpers.defineInteropFlag(exports);
+_parcelHelpers.export(exports, "ExportFile", function () {
+  return ExportFile;
+});
+function ExportFile(array) {
+  let json = [JSON.stringify(array, null, 2)];
+  let blob = new Blob(json, {
+    type: 'application/json'
+  });
+  url = window.URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = `your_link.pdf`;
+  link.download = url;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+_c = ExportFile;
+var _c;
+$RefreshReg$(_c, "ExportFile");

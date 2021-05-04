@@ -1,0 +1,91 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _jsxFileName = "/Users/wavery/Projects/Javascript/manage/src/components/MachineControls.jsx";
+  function MachineControls(props) {
+    const {onImport, onExport} = props;
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        style: {
+          marginTop: "10px"
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 7,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("h3", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 8,
+          columnNumber: 17
+        }
+      }, "Bot Controls"), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        style: {
+          display: "flex",
+          justifyContent: "space-between",
+          maxWidth: "230px"
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("input", {
+        type: "button",
+        value: "IMPORT",
+        onClick: e => onImport(e.target.value),
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 10,
+          columnNumber: 21
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement("input", {
+        type: "button",
+        value: "EXPORT",
+        onClick: e => onExport(e.target.value),
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11,
+          columnNumber: 21
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement("input", {
+        type: "button",
+        value: "TRAIN",
+        onClick: e => onClick(e.target.value),
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12,
+          columnNumber: 21
+        }
+      })), /*#__PURE__*/_reactDefault.default.createElement("br", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14,
+          columnNumber: 13
+        }
+      }))
+    );
+  }
+  exports.default = MachineControls;
+  _c = MachineControls;
+  var _c;
+  $RefreshReg$(_c, "MachineControls");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

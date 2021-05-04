@@ -1,0 +1,157 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _jsxFileName = "/Users/wavery/Projects/Javascript/manage/src/components/Selector.jsx";
+  function Selector(props) {
+    const {onClick, selector, onImport, onExport} = props;
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        style: {
+          marginTop: "10px"
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 7,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("p", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 8,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("span", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("h3", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9,
+          columnNumber: 27
+        }
+      }, "Board Controls"), selector)), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        style: {
+          marginBottom: "5px"
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("input", {
+        type: "file",
+        id: "file",
+        name: "file",
+        multiple: 0,
+        onChange: e => onImport(e.target.files[0]),
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12,
+          columnNumber: 21
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement("input", {
+        type: "button",
+        value: "EXPORT",
+        onClick: e => onExport(e.target.value),
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 13,
+          columnNumber: 21
+        }
+      })), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        style: {
+          display: "flex",
+          justifyContent: "space-between",
+          maxWidth: "300px"
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 15,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("input", {
+        type: "button",
+        value: "WALL",
+        onClick: e => onClick(e.target.value),
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 16,
+          columnNumber: 21
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement("input", {
+        type: "button",
+        value: "START",
+        onClick: e => onClick(e.target.value),
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17,
+          columnNumber: 21
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement("input", {
+        type: "button",
+        value: "END",
+        onClick: e => onClick(e.target.value),
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18,
+          columnNumber: 21
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement("input", {
+        type: "button",
+        value: "CLEAR",
+        onClick: e => onClick(e.target.value),
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19,
+          columnNumber: 21
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement("input", {
+        type: "button",
+        value: "PATH",
+        onClick: e => onClick(e.target.value),
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20,
+          columnNumber: 21
+        }
+      })), /*#__PURE__*/_reactDefault.default.createElement("br", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22,
+          columnNumber: 13
+        }
+      }))
+    );
+  }
+  exports.default = Selector;
+  _c = Selector;
+  var _c;
+  $RefreshReg$(_c, "Selector");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

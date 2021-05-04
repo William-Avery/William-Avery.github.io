@@ -1,0 +1,13 @@
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+_parcelHelpers.defineInteropFlag(exports);
+_parcelHelpers.export(exports, "ExportFile", function () {
+  return ExportFile;
+});
+var _fs = require("fs");
+var _fsDefault = _parcelHelpers.interopDefault(_fs);
+function ExportFile(array) {
+  _fsDefault.default.writeFileSync(`../profiles/${+new Date()}.json`, JSON.stringify(array), null, 4);
+}
+_c = ExportFile;
+var _c;
+$RefreshReg$(_c, "ExportFile");
