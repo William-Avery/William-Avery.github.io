@@ -1,0 +1,53 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _index = require("./index");
+  var _jsxFileName = "/Users/wavery/Projects/Javascript/manage/src/components/TileList.jsx";
+  function TileList(props) {
+    const {tiles, columns, handleClick} = props;
+    const tileList = tiles.map(tile => {
+      return (
+        /*#__PURE__*/_reactDefault.default.createElement(_index.Tile, {
+          key: tile.id,
+          tile: tile,
+          onClick: handleClick,
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 9,
+            columnNumber: 13
+          }
+        })
+      );
+    });
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        style: {
+          display: "grid",
+          gridTemplateColumns: `repeat(${columns}, 5rem)`,
+          gridGap: "2px"
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14,
+          columnNumber: 9
+        }
+      }, tileList)
+    );
+  }
+  exports.default = TileList;
+  _c = TileList;
+  var _c;
+  $RefreshReg$(_c, "TileList");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
