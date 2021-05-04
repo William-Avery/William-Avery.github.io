@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
+  "type": "module",
   "scripts": {
     "build": "parcel build src/index.html --dist-dir public",
     "start": "parcel serve src/index.html",
